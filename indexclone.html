@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="index.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="main">
+        <div class="content2" id="content2">
+         
+           
+            <div class="outline" id="outline">
+              
+                <img src="svg with paths.svg" alt="" class="svgimage">
+                  <div class="text" id="text">
+                    <h1>25M+ Downloads</h1>
+                    <p class="p2">on oppostore & google playstore</p>
+                  </div>
+                  <div class="text2" id="text2">
+                    <h1>Bhanuprakash</h1>
+                    <p class="p2">Is the perfect person</p>
+                  </div>
+                  
+             
+            </div>
+            <div class="about">
+              <img src="world-communication-awards-for-best-digital-experience.png" alt="" class="communication">
+              <h1>ABC 123</h1>
+              <p>we are the best</p>
+              <p>Web developing Company</p>
+              <p>In the world</p>
+              <div class="skip">
+                <h4 class="view">view core study</h4>
+                <h5>skip</h5>
+
+              </div>
+            </div>
+        </div>
+        <div class="content3" id="content3" >
+          <div class="images2">
+            <img src="1.png" alt="" class="imaging1 " id="imaging1" >
+          <img src="2.png" alt="" class="imaging2 " id="imaging2">
+          </div> 
+          <div class="phone2">
+            <img src="veme-blockchain-app-developed.png" alt="Bhanuprakash" class="image4" id="imaging4">
+            <img src="veme-app-ui-design.png" alt="Bhanuprakash" class="image5" id="imaging5">
+          </div>
+          <div class="phone3">
+            
+            <img src="pizza_box.png" alt="" class="pizza" id="pizza">
+            <img src="domi-img1.png" alt="" class="image6" id="image6">
+            <img src="dominos-bread1.png" alt="" class="bhadam1" id="bhadam1">
+            <img src="dominos-bread.png" alt="" class="bhadam" id="bhadam">
+            <img src="ux-strategy-for-mobile-app-devlopment.png" alt="" class="image7" id="image7">
+          
+          </div>
+          <div class="phone4">
+            <img src="karavan-social-networking-app-screen.png" alt="" class="image8" id="image8">
+            <img src="social-networking-app-case-study.png" alt="" class="image9" id="image9">
+            <img src="developers-for-social-media-app.png" alt="" class="image10" id="image10">
+            <img src="karavan_2.png" alt="" class="image11" id="image11">
+            <img src="karavan-social-networking-app-screen-2.png" alt="" class="image12" id="image12">
+          </div>
+          <div class="phone5">
+           
+            <img src="erp-app-development-service.png" alt="" class="image13" id="image13">
+          </div>
+          <div class="phone6">
+         
+            <img src="melltoo-img2.png" alt="" class="image14" id="image14">
+            <img src="melltoo-img1.png" alt="" class="image15" id="image15">
+          </div>
+          <!-- <img src="phone-mockup.svg" alt="">
+
+          <img src="phone-mockup.svg" alt=""> -->
+
+
+        </div>
+        
+    </div>
+    <script>
+        let image2=document.getElementById('imaging2');
+        let image1=document.getElementById('imaging1');
+        let content2=document.getElementById('content2');
+        let image4 =document.getElementById('imaging4');
+        let image5 =document.getElementById('imaging5');
+        let outline=document.getElementById('outline');
+        let content3=document.getElementById('content3');
+        let pizza=document.getElementById('pizza');
+        let image6=document.getElementById('image6');
+        let bhadam1=document.getElementById('bhadam1');
+        let bhadam = document.getElementById('bhadam');
+        let image7= document.getElementById('image7');
+        let image8=document.getElementById('image8');
+        let image9=document.getElementById('image9');
+        let image10=document.getElementById('image10');
+        let image11=document.getElementById('image11');
+        let image12=document.getElementById('image12');
+        let image13=document.getElementById('image13');
+        let image14=document.getElementById('image14');
+        let image15=document.getElementById('image15');
+        let text=document.getElementById('text');
+        let text2=document.getElementById('text2');
+        var count=0;
+        window.addEventListener('scroll',()=>{
+            const triggerBotton= window.innerHeight / 5 *4;
+            const imagetop1=image1.getBoundingClientRect().top;
+            const imagetop2=image2.getBoundingClientRect().top;
+            console.log("image1top"+imagetop1);
+            console.log("image2top"+imagetop2);
+            console.log("triggerbooton"+triggerBotton);
+           let value= window.scrollY;
+           console.log("value is"+ value);  
+            
+            if(value>5 && value<528)
+            {
+              image1.style=`visibility:visible;`
+              image2.style=`visibility:visible;`
+              image1.classList.add('show');
+              image2.classList.add('show');
+              count++;
+              console.log("count is"+count);
+              content2.style=`background-color: blueviolet;`
+              outline.style=`background-color: blueviolet;`
+              content3.style=` background-color:rgb(206, 218, 220);`;
+              text.style=`visibility:hidden;`;
+              text2.style=`visibility: visible;`;
+
+              
+            }
+            else
+            {
+              image1.classList.remove('show');
+              image2.classList.remove('show');
+              image1.style=`visibility:hidden;`
+              image2.style=`visibility:hidden;`
+              console.log("Bhanuprakash");
+            }
+            
+            if(value>750 && value <1180)
+            {
+              image4.style=`visibility:visible;`
+              image5.style=`visibility:visible;`
+              // image5.classList.remove('image5')
+              image5.style = 'transform : translateY(-120%);';
+              image4.style = 'transform : translateY(-30%);';
+              content2.style=`background-color: rgb(63, 63, 231);`
+              outline.style=`background-color: rgb(63, 63, 231);`
+              content3.style=`background-color: rgb(12, 12, 77);`;
+              
+              // image5.classList.add('show2');
+            }
+            else{
+              image5.style='transform:translateY(-400%);';
+              image4.style='transform:translateY(380%);';
+              image4.style=`visibility:hidden;`
+              image5.style=`visibility:hidden;`
+            }
+            if(value>1400 && value<2162)
+            {
+              image6.style=`visibility:visible;`
+              image7.style=`visibility:visible;`
+              bhadam.style=`visibility:visible;`
+              bhadam1.style=`visibility:visible;`
+              pizza.classList.add('pizza2');
+             
+              image6.classList.add('image62');
+              bhadam1.classList.add('bhadam12');
+              bhadam.classList.add('bhadam2');
+              image7.classList.add('image72');
+              content2.style=`background-color: rgb(53, 59, 77);`
+              outline.style=`background-color: rgb(53, 59, 77);
+              
+              `
+              content3.style=`background-color:black;`;
+            }
+            else{
+              pizza.classList.remove('pizza2');
+              image6.classList.remove('image62');
+              bhadam1.classList.remove('bhadam12');
+              bhadam.classList.remove('bhadam2');
+              image7.classList.remove('image72');
+              image6.style=`visibility:hidden;`
+              image7.style=`visibility:hidden;`
+              bhadam.style=`visibility:hidden;`
+              bhadam1.style=`visibility:hidden;`
+            }
+            if(value>2485 && value<3000)
+            {
+              image8.classList.add('image28');
+              image9.classList.add('image29');
+              image10.classList.add('image210');
+              image11.classList.add('image211');
+              image12.classList.add('image212');
+              content3.style=`background-color:skyblue;`;
+              content2.style=`background-color:blue;`
+              outline.style=`background-color: blue;`
+              
+            }
+            else{
+              image8.classList.remove('image28');
+              image9.classList.remove('image29');
+              image10.classList.remove('image210');
+              image11.classList.remove('image211');
+              image12.classList.remove('image212');
+            }
+            if(value>3350 && value<3934)
+            {
+              image13.classList.add('image213'); 
+              content2.style=`background-color:blue;`
+              outline.style=`background-color: blue;`
+            }
+            else{
+              image13.classList.remove('image213');
+            }
+            if(value > 4557 && value < 4947)
+            {
+              image14.classList.add('image214');
+              image15.classList.add('image215');
+              content3.style=`background-color:rgb(106, 187, 106);`;
+              content2.style=`background-color:green;`
+              outline.style=`background-color: green;`
+            }
+            else{
+              image14.classList.remove('image214');
+              image15.classList.remove('image215');
+            }
+            // }
+
+
+                // image1.classList.add('show');
+          // if(imagetop1 < 2300 && imagetop2 < -2400 )
+          // {
+          //   image1.classList.add('show');
+          //   image2.classList.add('show');
+
+            
+          // }
+          // if(imagetop1 <-200 && im   agetop2 <-200)
+
+          // {
+          //   image1.classList.add('show');
+          //   image2.classList.add('show');
+          // }
+
+          // if(imagetop1  > triggerBotton)
+          // {
+          //   image1.classList.add('show');
+          //  image2.classList.add('show');
+          // }
+          // else
+          // {
+          //   image1.classList.remove('show');
+          //  image2.classList.remove('show');
+          // }
+           
+            
+        })
+    </script>
+</body>
+</html>
